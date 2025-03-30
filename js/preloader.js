@@ -1,6 +1,6 @@
 var strings = [
   "Initializing cybersecurity profile...",
-  "Resolving local host 169.254.0.0/16...",
+  "Resolving local host 127.0.0.1...",
   "Requesting secure system access...",
   "Verifying digital identity...",
   "Authentication failed...",
