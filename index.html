@@ -1,189 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NetworkPersaud Portfolio</title>
-  <style>
-    /* Base Reset and Fonts */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body, html {
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-    }
-    /* Preloader Styles */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-    #preloader p {
-      font-size: 1.75rem;
-      font-weight: bold;
-    }
-    /* Hide main content until preloader is done */
-    #main {
-      display: none;
-    }
-    /* Navigation */
-    header {
-      background: #333;
-      padding: 1rem;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      margin-right: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    /* Section Styling */
-    section {
-      padding: 100px 20px 60px; /* extra top padding to account for fixed header */
-      min-height: 100vh;
-    }
-    h1, h2 {
-      margin-bottom: 20px;
-    }
-    /* Dynamic Text */
-    .dynamic-text {
-      color: #ff9800;
-    }
-    /* Footer */
-    footer {
-      background: #333;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lakshya CTF</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <!-- Preloader -->
-  <div id="preloader">
-    <p>OKInitializing cybersecurity profile...</p>
-  </div>
 
-  <!-- Main Content -->
-  <div id="main">
-    <!-- Navigation -->
-    <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-      <h1>Hello, I'm <span class="dynamic-text">NetworkPersaud</span></h1>
-      <h2>I'm a <span class="dynamic-text">Web Developer</span></h2>
-      <p>Welcome to my portfolio website where I showcase my skills, projects, and experience.</p>
-    </section>
+<body class="imgloaded">
 
-    <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate web developer dedicated to building responsive and dynamic websites.
-         I love turning ideas into engaging digital experiences.</p>
-    </section>
+    <div id="preloader">
+    </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Web Developer at XYZ Company</h3>
-        <p><em>Jan 2021 - Present</em></p>
-        <p>Developed and maintained modern web applications with a focus on responsive design and interactivity.</p>
-      </article>
-      <article>
-        <h3>Frontend Developer at ABC Studio</h3>
-        <p><em>Jun 2019 - Dec 2020</em></p>
-        <p>Implemented engaging user interfaces and interactive designs for multiple high-traffic projects.</p>
-      </article>
-    </section>
+    <div id="main">
+        <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+        </div>
+        <div class="navbar-dark text-white">
+            <div class="container">
+                <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-light">
+                                <h3 class="bold"><span class="color_danger">LAKSHYA</span><span class="color_white">CTF</span></h3>
+                            </a>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <a href="index.html" class="p-3 text-decoration-none text-white bold">Home</a>
+                            <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
+                            <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
+                            <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
+                            <a href="register.html" class="p-3 text-decoration-none text-light bold">Register</a>
+                        </div>
+                    </div>
+                </nav>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5 &amp; CSS3</li>
-        <li>JavaScript &amp; ES6+</li>
-        <li>React &amp; Vue.js</li>
-        <li>Responsive Design</li>
-        <li>Git &amp; GitHub</li>
-        <li>Animations &amp; Transitions</li>
-      </ul>
-    </section>
+            </div>
+        </div>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <article>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p><em>University of Example, 2015 - 2019</em></p>
-        <p>Focused on software development, algorithms, and modern web technologies.</p>
-      </article>
-    </section>
+        <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <h1 class="display-1 bold color_white content__title">LAKSHYA CTF<span class="vim-caret">&nbsp;</span></h1>
+                        <h1 class="display-1 bold color_white content__title2">INC 2020</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <p class="mt-5 text-grey text-spacey hackerFont lead">
+                            The quieter you become the more you are able to hear.
+                        </p>
+                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter" onclick="(function(){window.location.href='login.html'})();">
+                            <h4>Login</h4>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Project One</h3>
-        <p>A dynamic web application showcasing innovative design and interactive features.</p>
-        <a href="https://github.com/NetworkPersaud/project-one" target="_blank">View on GitHub</a>
-      </article>
-      <article>
-        <h3>Project Two</h3>
-        <p>An engaging project that leverages animations and dynamic text to create immersive user experiences.</p>
-        <a href="https://github.com/NetworkPersaud/project-two" target="_blank">View on GitHub</a>
-      </article>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 NetworkPersaud. All rights reserved.</p>
-    </footer>
-  </div>
 
-  <!-- Inline JavaScript -->
-  <script>
-    // Wait for the window to load, then after 3 seconds, hide the preloader and show the main content.
-    window.addEventListener('load', function() {
-      setTimeout(function() {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('main').style.display = 'block';
-      }, 3000);
-    });
-
-    // Dynamic Text Animation for Home Section
-    const dynamicTextElement = document.querySelector('.dynamic-text');
-    const phrases = ['Web Developer', 'Creative Coder', 'Problem Solver', 'Tech Enthusiast'];
-    let currentPhrase = 0;
-    setInterval(() => {
-      dynamicTextElement.textContent = phrases[currentPhrase];
-      currentPhrase = (currentPhrase + 1) % phrases.length;
-    }, 3000);
-  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
